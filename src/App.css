@@ -1,38 +1,1135 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@200;300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Top Navigation */
+.topNavigation {
+    background-color: white;
+    display: flex;
+    padding: 20px 64px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logoText {
+    font-family: "Script MT Bold", cursive;
+    color: #1E1E1E;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.hamburger span {
+    width: 24px;
+    height: 4px;
+    background-color: #1E1E1E;
+    border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #3c3c3c;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.active {
+    color: #070c12;
+    font-weight: 400;
+}
+
+.dropdownMenu {
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navButton {
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #223c59;
+    color: white;
+}
+
+/* Hero Section */
+.heroSection {
+    background-image: url("./assets/hero-image.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.heroContent{
+    display: flex;
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.heroTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.heroHeading {
+    color: white;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    /* line-height: 90px; */
+}
+
+.heroText {
+    color: #e7e7e7;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 694px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.heroButtonsContainer {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.primaryButton{
+    display: flex;
+    padding: 17px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #223c59;
+    color: white;
+}
+
+.secondaryButton{
+    display: flex;
+    padding: 17px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #a0d1ca;
+    color: #1E1E1E;
+}
+
+/* Learnmore Section */
+.learnMore {
+    background-image: url("./assets/circle-ring.svg");
+    /* background-color: white; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px 500px;
+    padding: 64px 44px 44px 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    max-width: 575px;
+    width: 100%;
+    height: auto;
+}
+
+.leftTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+h3 {
+    color: #1E1E1E;
+    font-family: "Merriweather", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.72px;
+}
+
+.leftText {
+    color: #6c6c6c;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rightContent {
+    max-width: 524px;
+    width: 100%;
+    height: auto;
+}
+
+.rightContent img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* School Section */
+.schoolSections {
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    background: #17283b;
+    /*color: white;*/
+}
+
+.schoolSectionsHeading {
+    color: white;
+}
+
+.academic {
+    color: #909dac;
+    font-weight: 700;
+}
+
+.schoolSectionsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.schoolDivision {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 312px 20px 32px 20px;
+    max-width: 371px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.division1 {
+    background-image: url(./assets/school-section-img1.png);
+}
+
+.division2 {
+    background-image: url(./assets/school-section-img2.png);
+}
+
+.division3 {
+    background-image: url(./assets/school-section-img3.png);
+}
+
+.circularButton {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textandbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schoolSectionsText {
+    color: white;
+    font-family: "Merriweather", serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    font-style: normal;
+}
+
+/* Why Choose Us Section */
+.whyChooseUs {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    gap: 48px;
+    padding: 64px;
+    background-color: #ecf6f4;
+}
+
+.whyChooseUsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.whyChooseLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    width: 100%;
+}
+
+h2 {
+    color: #1E1E1E;
+    font-family: "Merriweather", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-style: 700;
+    letter-spacing: 0.8px;
+}
+
+.center {
+    text-align: center;
+}
+
+.topImageContainer {
+    max-width: 456px;
+    width: 100%;
+    border-radius: 8px;
+    height: 220px;
+    background-image: url(./assets/top-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*border: 2px solid red;*/
+}
+
+.bottomImageContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    max-width: 456px;
+    width: 100%;
+    height: 190px;
+    /*border: 2px solid red;*/
+}
+
+.bottomImage1 {
+    border-radius: 8px;
+    max-width: 222px;
+    width: 100%;
+    height: 190px;
+    background-image: url(./assets/bottom-image1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*border: 2px solid red;*/
+}
+
+.bottomImage2 {
+    border-radius: 8px;
+    max-width: 222px;
+    width: 100%;
+    height: 190px;
+    background-image: url(./assets/bottom-image2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*border: 2px solid red;*/
+}
+
+.whyChooseRight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 24px;
+    max-width: 646px;
+    width: 100%;
+}
+
+.whyChooseCard {
+    display: flex;
+    max-width: 311px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.cardTextContainer {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardHeading {
+    color: #1E1E1E;
+    font-family: "Merriweather", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+}
+
+.cardText{
+    color: #6c6c6c;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Virtual Tour Section */
+.virtualTour {
+    padding: 64px 64px 64px 80px;
+    gap: 48px;
+    /*align-items: center;*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.virtualTourContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.virtualTourRowOne {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.imageCardOneCont {
+    background-image: url(./assets/tour1.png);
+    max-width: 410px;
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imageTripleCardCont {
+    display: flex;
+    flex-direction: row;
+    max-width: 714px;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+}
+
+.imageTripleCardCont img {
+    object-fit: cover;
+}
+
+.virtualTourRowTwo {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.imageSingleCardCont img{
+    object-fit: cover;
+    max-width: 230px;
+    width: 100%;
+    max-height: 220px;
+    height: auto;
+}
+
+.rowTwo {
+    background-image: url(./assets/tour2b.png);
+}
+
+.imageDoubleCardCont {
+    display: flex;
+    flex-direction: row;
+    max-width: 472px;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+}
+
+.imageDoubleCardCont img {
+    object-fit: cover;
+    max-width: 230px;
+    width: 100%;
+    max-height: 220px;
+    height: auto;
+}
+
+.virtualTourRowThree {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.rowThree {
+    background-image: url(./assets/tour3c.png);
+}
+
+/* Schedule Visit Section */
+.scheduleVisit {
+    padding: 39px 71px 39px 70px;
+    background-color: #ecf6f4;
+    align-items: center;
+}
+
+.scheduleVisitContainer {
+    padding: 64px 259px 64px 259px;
+    background-color: #223c59;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.scheduleVisitTextCont {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 621px;
+    width: 100%;
+}
+
+.scheduleVisitHeader {
+    color: white;
+}
+
+.scheduleVisitText {
+    color: #cbcbcb;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.scheduleVisitBtnCont {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.tertiaryButton {
+    display: flex;
+    padding: 17px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.others {
+    display: flex;
+    padding: 64px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.othersCard {
+    display: flex;
+    padding: 39.96px 20px 32px 20px;
+    flex-direction: column;
+    gap: 54px;
+    border-radius: 12px;
+    background-color: #223c59;
+    width: 100%;
+}
+
+.othersCard img {
+    max-width: 220px;
+    width: 100%;
+    max-height: 185.841px;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.othersCardContainer{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headingandbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h5 {
+    color: white;
+    font-family: "Merriweather", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+}
+
+.circularButtonSmall {
+    /*max-width: 40px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    align-items: center;*/
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.circularButtonSmall img {
+    width: 24px;
+    height: 24px;
+}*/
+
+.otherCardText {
+    color: white;
+    font-family: "Poppin", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.othersCardDiff {
+    display: flex;
+    padding: 12px 20px 32px 20px;
+    flex-direction: column;
+    gap: 54px;
+    border-radius: 12px;
+    background-color: #a0d1ca;
+    width: 100%;
+}
+
+.othersCardDiff img {
+    max-width: 200px;
+    width: 100%;
+    max-height: 185.841px;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.blackh5 {
+    color: #1E1E1E;
+}
+
+.blackText {
+    color: #515151;
+}
+
+.othersCardBook {
+    display: flex;
+    padding: 55px 20px 32px 20px;
+    flex-direction: column;
+    gap: 54px;
+    border-radius: 12px;
+    background-color: #223c59;
+    width: 100%;
+}
+
+.othersCardBook img {
+    max-width: 248.82px;
+    width: 100%;
+    max-height: 142.689px;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 58px 64px 58px 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #17283b;
+    color: white;
+}
+
+.footerText {
+    color: white;
+}
+
+.copyrightText {
+    font-family: "Merriweather", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    font-style: normal;
+}
+
+.socialMediaLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+/*  TABLET — 1024px and below */
+@media (max-width: 1024px) {
+
+    .topNavigation {
+        padding: 20px 32px;
+    }
+
+    .navLinks {
+        gap: 24px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .heroHeading {
+        font-size: 56px;
+    }
+
+    .heroText {
+        font-size: 18px;
+    }
+
+    .primaryButton,
+    .secondaryButton,
+    .tertiaryButton {
+        width: fit-content;
+        align-self: center;
+        padding: 16px 48px;
+    }
+
+    .learnMore {
+        padding: 48px 32px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .schoolSectionsContainer {
+        flex-wrap: wrap;
+    }
+
+    .schoolDivision {
+        max-width: 100%;
+    }
+
+    .whyChooseUsContainer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .whyChooseLeft,
+    .whyChooseRight {
+        max-width: 100%;
+    }
+
+    .scheduleVisitContainer {
+        padding: 48px 64px;
+    }
+
+    .others {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* LARGE PHONES — 768px and below */
+@media (max-width: 768px) {
+
+    .topNavigation {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: flex-start;
+        top: 0;
+        left: -100%;
+        width: auto;
+        height: auto;
+        background-color: white;
+        gap: 20px;
+        padding: 40px 40px;
+        z-index: 1000;
+        transition: right 0.3s ease;
+        border-radius: 0 0 8px 0;
+    }
+
+    .navLinks .navButton {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navLinks.open {
+        left: 0;
+    }
+
+    .heroSection {
+        height: auto;
+        padding: 80px 24px;
+    }
+
+    .heroHeading {
+        font-size: 40px;
+        letter-spacing: 0.8px;
+    }
+
+    .heroText {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .heroButtonsContainer {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 24px;
+        align-items: center;
+    }
+
+    .primaryButton,
+    .secondaryButton,
+    .tertiaryButton {
+        width: fit-content;
+        align-self: center;
+        padding: 16px 48px;
+    }
+
+    .learnMore {
+        flex-direction: column;
+        gap: 32px;
+        padding: 40px 24px;
+        background-size: 300px 300px;
+    }
+
+    .leftContent {
+        max-width: 100%;
+    }
+
+    .rightContent {
+        max-width: 100%;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .schoolSections {
+        padding: 40px 24px;
+    }
+
+    .schoolSectionsHeading {
+        font-size: 24px;
+    }
+
+    .schoolSectionsContainer {
+        flex-direction: column;
+    }
+
+    .schoolDivision {
+        padding: 200px 20px 24px 20px;
+    }
+
+    .whyChooseUs {
+        padding: 40px 24px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .topImageContainer {
+        max-width: 100%;
+    }
+
+    .bottomImageContainer {
+        max-width: 100%;
+    }
+
+    .bottomImage1,
+    .bottomImage2 {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .whyChooseRight {
+        grid-template-columns: 1fr;
+    }
+
+    .whyChooseCard {
+        max-width: 100%;
+    }
+
+    .virtualTour {
+        padding: 40px 20px;
+        gap: 16px;
+    }
+
+    .virtualTourRowOne,
+    .virtualTourRowTwo,
+    .virtualTourRowThree {
+        flex-direction: column;
+    }
+
+    .imageCardOneCont {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .imageTripleCardCont,
+    .imageDoubleCardCont,
+    .imageSingleCardCont {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .imageCardOneCont img,
+    .imageDoubleCardCont img,
+    .imageSingleCardCont img {
+        max-width: 100%;
+        width: 100%;
+        height: 200px
+    }
+
+    .scheduleVisit {
+        padding: 24px;
+    }
+
+    .scheduleVisitContainer {
+        padding: 40px 24px;
+    }
+
+    .scheduleVisitText {
+        font-size: 16px;
+    }
+
+    .scheduleVisitBtnCont {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* .primaryButton {
+        width: fit-content;
+        align-self: center;
+        padding: 14px 28px;
+    }
+
+    .secondaryButton {
+        width: fit-content;
+        align-self: center;
+        padding: 14px 28px;
+    }
+
+    .tertiaryButton {
+        width: fit-content;
+        align-self: center;
+        padding: 14px 28px;
+    } */
+
+    .others {
+        flex-direction: column;
+        padding: 40px 24px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 24px;
+        padding: 40px 24px;
+        text-align: center;
+    }
+}
+
+
+/* SMALL PHONES — 480px and below */
+@media (max-width: 480px) {
+
+    .logoText {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger span {
+        width: 20px;
+        height: 2px;
+    }
+
+    /* .navLinks {
+        display: none;
+        flex-direction: row;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        gap: 20px;
+        z-index: 100;
+    }
+
+    .navLinks.open {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .topNavigation {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .loginButton {
+        display: none;
+    }
+
+    .heroHeading {
+        font-size: 28px;
+    }
+
+    .heroSection {
+        height: auto;
+        padding: 80px 16px;
+    }
+
+    .heroText {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .leftText {
+        font-size: 15px;
+    }
+
+    .primaryButton,
+    .secondaryButton,
+    .tertiaryButton {
+        width: fit-content;
+        align-self: center;
+        padding: 14px 48px;
+    }
+
+    .schoolSectionsText {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .cardHeading {
+        font-size: 18px;
+    }
+
+    .cardText {
+        font-size: 14px;
+    }
+
+    .scheduleVisitHeader {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    .otherCardText {
+        font-size: 14px;
+    }
 }
