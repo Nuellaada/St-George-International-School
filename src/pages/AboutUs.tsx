@@ -1,10 +1,10 @@
 //import Navbar from "../components/Navbar";
 import AboutUsHero from "../components/AboutUs/AboutUsHero";
-import SetUsApart from "../components/SetUsApart";
-import VisionSection from "../components/VisionSection";
-import MeetDirector from "../components/MeetDirector";
-import LearnMore from "../components/LearnMore";
-import ScheduleVisit from "../components/ScheduleVisit";
+import SetsApart from "../components/AboutUs/SetsApart";
+import Statements from "../components/AboutUs/Statements";
+import OurDirector from "../components/AboutUs/OurDirector";
+import WatchWord from "../components/AboutUs/WatchWord";
+import CTA from "../components/AboutUs/CTA";
 //import Footer from "../components/Footer";
 
 function AboutUs () {
@@ -12,11 +12,11 @@ function AboutUs () {
     return (
         <div>
             <AboutUsHero />
-            <SetUsApart />
-            <VisionSection />
-            <MeetDirector />
-            <LearnMore />
-            <ScheduleVisit />
+            <SetsApart />
+            <Statements />
+            <OurDirector />
+            <WatchWord />
+            <CTA />
         </div>
     );
 }
