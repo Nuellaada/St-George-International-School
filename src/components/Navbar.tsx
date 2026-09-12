@@ -18,14 +18,8 @@ function Navbar () {
             <ul className={`navLinks ${isOpen ? "open" : ""}`}>
                 <li><Link to="/" className={location.pathname === "/" ? "active" : ""}>Home</Link></li>
                 <li><Link to="/about" className={location.pathname === "/about" ? "active" : ""}>About us</Link></li>
-                <li><a href="#">Contact us</a></li>
-                <li className="dropdown"><a href="#">Admissions</a>
-                <ul className="dropdownMenu">
-                    <li><a href="#">How to apply</a></li>
-                    <li><a href="#">Requirements</a></li>
-                    <li><a href="#">Tuition and Fees</a></li>
-                </ul>
-                </li>
+                <li><Link to="/contact" className={location.pathname === "/contact" ? "active" : ""}>Contact us</Link></li>
+                <li><Link to="/admission" className={location.pathname === "/admission" ? "active" : ""}>Admissions</Link></li>
                 <li><button className="navButton">Login</button></li>
             </ul>
 

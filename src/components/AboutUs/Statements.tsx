@@ -26,7 +26,7 @@ function Statements () {
         <section className="statements">
             {cards.map((card, index) => (
                 <div className="visionCard" key={index}>
-                    <img src={card.icon} />
+                    <img src={card.icon} alt="icon" />
                     <h5>{card.heading}</h5>
                     <p>{card.text}</p>
                 </div>
