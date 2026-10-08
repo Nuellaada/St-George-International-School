@@ -1,0 +1,220 @@
+/* ===== CONTACT HERO ===== */
+.ContactHeroContent {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ===== NEED ASSISTANCE ===== */
+.needAssistance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 64px;
+    background-color: #ecf6f4;
+}
+
+.headingCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.naText {
+    color: #6c6c6c;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.bodyCont {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.addressCont {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 240px;
+    width: 100%;
+}
+
+.addressCont img {
+    width: 36px;
+    height: 36px;
+}
+
+.addressCont h5 {
+    color: #1E1E1E;
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.contactItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.contactItem img {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.contactLabel {
+    color: #1E1E1E;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 130px;
+}
+
+.contactValue {
+    color: #6c6c6c;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* ===== SEND MESSAGE ===== */
+.sendMessage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+    padding: 64px;
+    background-color: white;
+}
+
+.smLeft {
+    max-width: 460px;
+    width: 100%;
+    height: 460px;
+    background-image: url('../assets/Aboutus/sendMessageImage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.smRight {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 460px;
+    width: 100%;
+}
+
+.smRight h4 {
+    color: #1E1E1E;
+    font-family: "Merriweather", serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.56px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formInput {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #1E1E1E;
+    outline: none;
+}
+
+.formInput:focus {
+    border-color: #223c59;
+}
+
+.formTextArea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #1E1E1E;
+    outline: none;
+    height: 140px;
+    resize: none;
+}
+
+.formTextArea:focus {
+    border-color: #223c59;
+}
+
+/* ===== CONTACT RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .needAssistance {
+        padding: 40px 24px;
+    }
+
+    .bodyCont {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .addressCont {
+        max-width: 100%;
+    }
+
+    .sendMessage {
+        flex-direction: column;
+        padding: 40px 24px;
+    }
+
+    .smLeft {
+        max-width: 100%;
+        height: 280px;
+    }
+
+    .smRight {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .smRight h4 {
+        font-size: 22px;
+    }
+
+    .contactLabel {
+        min-width: 110px;
+        font-size: 13px;
+    }
+
+    .contactValue {
+        font-size: 13px;
+    }
+}

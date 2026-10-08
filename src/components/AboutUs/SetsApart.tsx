@@ -1,4 +1,4 @@
-import polygonIcon from '../../assets/About us/Polygon 1.svg'
+import polygonIcon from '../../assets/Aboutus/Polygon 1.svg'
 
 function SetsApart () {
 

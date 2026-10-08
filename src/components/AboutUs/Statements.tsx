@@ -1,6 +1,6 @@
-import MissionIcon from '../../assets/About us/mission-icon.svg'
-import VisionIcon from '../../assets/About us/vision-icon.svg'
-import ValuesIcon from '../../assets/About us/values-icon.svg'
+import MissionIcon from '../../assets/Aboutus/mission-icon.svg'
+import VisionIcon from '../../assets/Aboutus/vision-icon.svg'
+import ValuesIcon from '../../assets/Aboutus/values-icon.svg'
 
 function Statements () {
     

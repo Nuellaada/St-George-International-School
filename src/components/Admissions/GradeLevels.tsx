@@ -1,6 +1,6 @@
-import nurseryImg from '../../assets/About us/nurseryImg.png'
-import primaryImg from '../../assets/About us/primaryImg.png'
-import secondaryImg from '../../assets/About us/secondaryImg.png'
+import nurseryImg from '../../assets/Aboutus/nurseryImg.png'
+import primaryImg from '../../assets/Aboutus/primaryImg.png'
+import secondaryImg from '../../assets/Aboutus/secondaryImg.png'
 
 function GradeLevels () {
     const divisions = [

@@ -1,4 +1,4 @@
-import WatchWordImage from '../../assets/About us/watchWordImg.png'
+import WatchWordImage from '../../assets/Aboutus/watchWordImg.png'
 
 function WatchWord () {
     return (

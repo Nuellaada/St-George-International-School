@@ -1,7 +1,7 @@
-import phoneIcon from '../../assets/About us/phone-icon.svg'
-import emailIcon from '../../assets/About us/email-icon.svg'
-import clockIcon from '../../assets/About us/workingHours-icon.svg'
-import addressIcon from '../../assets/About us/address-icon.svg'
+import phoneIcon from '../../assets/Aboutus/phone-icon.svg'
+import emailIcon from '../../assets/Aboutus/email-icon.svg'
+import clockIcon from '../../assets/Aboutus/workingHours-icon.svg'
+import addressIcon from '../../assets/Aboutus/address-icon.svg'
 
 function NeedAssistance () {
 

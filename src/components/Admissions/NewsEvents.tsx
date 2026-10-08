@@ -1,7 +1,7 @@
-import handbookIcon from '../../assets/About us/basil_book-mark-outline.svg'
-import requirementIcon from '../../assets/About us/circum_view-list.svg'
-import newsIcon from '../../assets/About us/hugeicons_news.svg'
-import portalIcon from '../../assets/About us/streamline-ultimate_coding-apps-website-network-globe.svg'
+import handbookIcon from '../../assets/Aboutus/basil_book-mark-outline.svg'
+import requirementIcon from '../../assets/Aboutus/circum_view-list.svg'
+import newsIcon from '../../assets/Aboutus/hugeicons_news.svg'
+import portalIcon from '../../assets/Aboutus/streamline-ultimate_coding-apps-website-network-globe.svg'
 
 function NewsEvents () {
     const events= [

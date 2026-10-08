@@ -1,0 +1,331 @@
+/* ===== GRADE LEVELS ===== */
+.gradeLevel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 64px;
+    background-color: white;
+}
+
+.gradeLevel h4 {
+    color: #1E1E1E;
+    font-family: "Merriweather", serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.64px;
+}
+
+.glCardContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+}
+
+.glCard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+.glCard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.glCardTextCont {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 16px;
+}
+
+.glCardHead {
+    color: #1E1E1E;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.glCardText {
+    color: #6c6c6c;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.glCardList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+.glCardListContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 0 16px;
+}
+
+.glCardListA,
+.glCardListB {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.glCardItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.glCardItem img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.glCardListText {
+    color: #6c6c6c;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* ===== TAKE VIRTUAL TOUR ===== */
+.takeTour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 64px;
+    background-color: white;
+}
+
+.takeTour h4 {
+    color: #1E1E1E;
+    font-family: "Merriweather", serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.64px;
+}
+
+/*.takeTourVideo {
+    width: 100%;
+    max-width: 900px;
+    height: 460px;
+    background-color: #1E1E1E;
+    border-radius: 12px;
+    background-image: url('../assets/tour-thumbnail.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.takeTourVideo::after {
+    content: '';
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url('../assets/play-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}*/
+
+/* ===== NEWS & EVENTS ===== */
+.newsEvents {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 40px 64px;
+    background-color: #ecf6f4;
+}
+
+.neLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 320px;
+    width: 100%;
+}
+
+.neLeft h5 {
+    color: #1E1E1E;
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.eventItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.eventDate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ecf6f4;
+    border-radius: 8px;
+    padding: 8px 12px;
+    min-width: 48px;
+}
+
+.eDayText {
+    color: #223c59;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.eMonthText {
+    color: #6c6c6c;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.eventDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.eTitle {
+    color: #1E1E1E;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.eSubDate {
+    color: #6c6c6c;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* ===== PARENT RESOURCES ===== */
+.neRight {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.parentResources {
+    background-image: url('../assets/Aboutus/parentResourcesBg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parentResources h3 {
+    color: white;
+    text-align: center;
+}
+
+.resourceIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    background-color: white;
+    padding: 24px 32px;
+    flex-wrap: wrap;
+}
+
+.resourceItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.resourceItem img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.resourceText {
+    color: #1E1E1E;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* ===== ADMISSIONS RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .gradeLevel {
+        padding: 40px 24px;
+    }
+
+    .glCardContainer {
+        flex-direction: column;
+    }
+
+    .takeTour {
+        padding: 40px 24px;
+    }
+
+    .takeTourVideo {
+        height: 260px;
+    }
+
+    .newsEvents {
+        flex-direction: column;
+        padding: 40px 24px;
+    }
+
+    .neLeft {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gradeLevel h4,
+    .takeTour h4 {
+        font-size: 24px;
+    }
+
+    .glCardHead {
+        font-size: 18px;
+    }
+
+    .resourceIcons {
+        gap: 24px;
+    }
+}

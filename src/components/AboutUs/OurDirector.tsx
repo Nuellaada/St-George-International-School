@@ -7,7 +7,7 @@ function OurDirector () {
                 <div className="odcCont">
                     <p className="odcTextItalic">“Every child deserves an environment where they can learn, grow and thrive. ”</p>
                     
-                    <div className="odc|NameCont">
+                    <div className="odcNameCont">
                         <h6>Dr. George Ugwu</h6>
                         <p className="odcName">Director</p>
                     </div>
