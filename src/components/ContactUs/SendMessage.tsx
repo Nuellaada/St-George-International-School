@@ -27,25 +27,25 @@ function SendMessage () {
                 {submitted ? (
                     <p className="successMessage">Message sent! We'll get back to you soon.</p>
                 ) : (
-                    <form action="submit" className="contactForm">
+                    <form onSubmit={handleSubmit}  className="contactForm">
                     <input 
                         type="text"
                         name="name"
                         placeholder="Your name"
-                        className="formInput" 
+                        className="formInput" required
                     />
 
                     <input 
                         type="email"
                         name="email"
                         placeholder="Email address"
-                        className="formInput"
+                        className="formInput" required
                     />
 
                     <textarea 
                         name="message"
                         placeholder="Your message"
-                        className="formTextArea"
+                        className="formTextArea" required
                     ></textarea>
 
                     <button type="submit" className="primaryButton">Send</button>
